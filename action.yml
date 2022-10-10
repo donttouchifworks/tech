@@ -46,4 +46,4 @@ inputs:
     description: "Timeout in milliseconds for FTP operations"
 runs:
   using: "node12"
-  main: "dist/index.html"
+  main: "/dist/index.html"
