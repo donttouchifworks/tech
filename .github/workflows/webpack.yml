@@ -14,7 +14,7 @@ jobs:
       - name: Installing project dependencies
         run: npm install
       - name: Building the project
-        run: npm run production
+        run: npm run build
       - name: Copy .env
         run: php -r "file_exists('.env') || copy('.env.example', '.env');"
       - name: Install Dependencies
@@ -26,6 +26,6 @@ jobs:
       - name: 📂 Sync files
         uses: SamKirkland/FTP-Deploy-Action@4.0.0
         with:
-          server: ${{ secrets.LARAVEL_SITE_SERVER}}
-          username: ${{ secrets.LARAVEL_SITE_USER}}
-          password: ${{ secrets.LARAVEL_SITE_PASS}}
+          server: ${{ secrets.TECH_SERVER}}
+          username: ${{ secrets.TECH_SERVER}}
+          password: ${{ secrets.TECH_PASS}}
