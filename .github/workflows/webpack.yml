@@ -1,5 +1,4 @@
-name: FTP Test
-
+name: Deploy Site on push
 on:
   push:
     branches: [master]
