@@ -12,7 +12,7 @@ jobs:
         uses: actions/checkout@v2
 
       - name: 📂 Sync files
-        uses: cd ./
+        uses: ./
         with:
           server: ${{ secrets.TECH_SERVER }}
           username: ${{ secrets.TECH_USER }}
